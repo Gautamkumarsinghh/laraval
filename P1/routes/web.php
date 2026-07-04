@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User;
 
@@ -35,3 +36,11 @@ Route::get('/services',function(){
 Route::get('/contact',function(){
     return 'indian';
 });
+
+//form Validation
+
+Route::get('/form',function(){
+    return view('form');
+});
+
+Route::post('student',[StudentController::class,'student']);
