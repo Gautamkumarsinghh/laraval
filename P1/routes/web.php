@@ -19,3 +19,19 @@ Route::get('user',[User::class,'fat']);
 
 Route::get('gamesh',[User::class,'love']);
 
+//five route
+Route::get('/go',function(){
+    return 'Welcome Gautam';
+});
+
+Route::get('/gallery',function(){
+    return 'sunday';
+});
+
+Route::get('/services',function(){
+    return 'mother';
+});
+
+Route::get('/contact',function(){
+    return 'indian';
+});
